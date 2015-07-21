@@ -1,4 +1,4 @@
-FROM base/archlinux:2015.06.01
+FROM base/archlinux:2014.07.03
 MAINTAINER madevil
 
 # additional files
