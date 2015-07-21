@@ -4,26 +4,11 @@
 set -e
 
 # update arch repo list with us mirrors
-
-echo 'Server = http://mirrors.abscission.net/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://mirrors.acm.wpi.edu/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
 echo 'Server = http://mirrors.advancedhosters.com/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://mirrors.aggregate.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://archlinux.surlyjake.com/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://repo.atlantic.net/arch/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://mirrors.cat.pdx.edu/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo 'Server = http://mirror.cc.columbia.edu/pub/linux/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://cosmos.cites.illinois.edu/pub/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://mirror.cs.pitt.edu/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://mirror.es.its.nyu.edu/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://mirror.gawsolutions.us/arch/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://mirrors.gigenet.com/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://mirror.grig.io/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://www.gtlib.gatech.edu/pub/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-echo '#Server = http://mirror.ancl.hawaii.edu/linux/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
 
 # set locale
 echo en_US.UTF-8 UTF-8 > /etc/locale.gen
+
 locale-gen
 echo LANG="en_US.UTF-8" > /etc/locale.conf
 
